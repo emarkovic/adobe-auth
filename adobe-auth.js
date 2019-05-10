@@ -10,7 +10,7 @@ var grant_type = "authorization_code"
 var submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click", () => {
 	var clientIdField = document.getElementById("clientId");
-	var clientSecretField = document.getElementById("client_secret");
+	var clientSecretField = document.getElementById("clientSecret");
 
 	var client_id = clientIdField.value;
 	var client_secret = clientSecretField.value;
