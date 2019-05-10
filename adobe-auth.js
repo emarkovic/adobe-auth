@@ -26,6 +26,11 @@ submitBtn.addEventListener("click", () => {
 	}
 });
 
+var getAccessBtn = document.getElementById("getAccessBtn");
+getAccessBtn.addEventListener("click", () => {
+	getAccessToken();
+});
+
 window.onload = () => {
 	var currentUrl = new URL(window.location.href);
 	var authorization_code = currentUrl.searchParams.get("code");
